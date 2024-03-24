@@ -1,1 +1,24 @@
-ffdfdfdf
+3)kakto:/# find -type f | wc -l
+48907
+
+4) find -type f ! -type l ! -type d > filelist1.txt
+
+5)find -type f -size +5k | xargs ls -l > filelist2.txt
+
+6) locate bash > filelist3.txt
+
+7)man -w * > filelist1.txt
+
+8) grep "/home" -n passwd > filelist3.txt
+
+9) gzip -1 filelist1.txt
+
+10) bzip2 -1 filelist1.txt.gz
+
+12) tar -cvf archive.tar filelist1.txt.gz.bz2 filelist2.txt filelist3.txt
+
+13) tar -rvf archive.tar passwd
+
+14) zip archive.zip filelist1.txt.gz.bz2 filelist2.txt filelist3.txt /etc/passwd
+
+16) Нет blackbox.tar.gz
